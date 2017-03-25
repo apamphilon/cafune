@@ -7,9 +7,9 @@
   height: 100%;
   overflow: visible;
   background-color: $white;
-  background-image: url('images/background.jpg');
+  background-image: url('images/background.png');
   background-size: 10%;
-  background-position: center center;
+  background-repeat: repeat;
 }
 
 .preloader__image {

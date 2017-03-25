@@ -633,7 +633,7 @@ img {
 body {
   background-color: #fff;
   width: 100%;
-  background-image: url("images/background.jpg");
+  background-image: url("images/background.png");
   background-size: 10%; }
 
 /* ==========================================================================
@@ -714,7 +714,7 @@ html {
 
 body {
   color: #444444;
-  font-family: "open sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 16px;
   font-size: 1.6rem; }
@@ -772,7 +772,7 @@ textarea {
   width: 100%;
   box-sizing: border-box;
   background: #ebe6e4;
-  font-family: "open sans", sans-serif; }
+  font-family: "Open Sans", sans-serif; }
   input[type="text"]::-webkit-input-placeholder,
   input[type="url"]::-webkit-input-placeholder,
   input[type="tel"]::-webkit-input-placeholder,
@@ -836,7 +836,7 @@ label {
   font-size: 1.3rem;
   line-height: 20px;
   display: none;
-  font-family: "open sans", sans-serif; }
+  font-family: "Open Sans", sans-serif; }
 
 .gfield > label {
   display: block; }
@@ -880,7 +880,7 @@ label {
   margin-bottom: 5px; }
 
 .gform_description {
-  font-family: "open sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-size: 1.6rem;
   line-height: 20px;
@@ -1100,7 +1100,7 @@ a img.aligncenter {
   clear: both;
   padding: 30px 0;
   background-color: #fff;
-  background-image: url("images/background.jpg");
+  background-image: url("images/background.png");
   background-size: 10%;
   background-position: center center;
   color: #684a1d;
@@ -3382,9 +3382,9 @@ a img.aligncenter {
   height: 100%;
   overflow: visible;
   background-color: #fff;
-  background-image: url("images/background.jpg");
+  background-image: url("images/background.png");
   background-size: 10%;
-  background-position: center center; }
+  background-repeat: repeat; }
 
 .preloader__image {
   animation: preload 2.5s infinite; }
@@ -3466,7 +3466,7 @@ html.js {
     filter: alpha(opacity=100); }
 
 .about {
-  background-image: url("images/background.jpg");
+  background-image: url("images/background.png");
   background-size: 10%;
   background-position: center center; }
   .about .wrapper {
