@@ -1,0 +1,27 @@
+{
+  "name": "wordpress_boilerplate",
+  "version": "1.0.0",
+  "description": "WordPress Theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/apamphilon/wordpress-boilerplate"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-tinypng-compress": "^1.2.1",
+    "gulp-uglify": "^1.4.1"
+  }
+}

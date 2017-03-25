@@ -1,0 +1,21 @@
+.site-footer {
+  float: left;
+  width: 100%;
+  clear: both;
+  padding: 30px 0;
+  background-color: $white;
+  background-image: url('images/background.jpg');
+  background-size: 10%;
+  background-position: center center;
+  color: darken($brown,10%);
+  @include font-size(14);
+  a {
+    color: darken($brown,10%);
+    &:hover {
+      color: $brown;
+    }
+  }
+  &__credit {
+    float: right;
+  }
+}

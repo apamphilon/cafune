@@ -1,0 +1,35 @@
+// base
+@import "sass/base/normalize"; // normalize
+@import "sass/base/html5bp"; // html5bp useful defaults
+
+// sass
+@import "sass/mixins";
+@import "sass/variables";
+@import "sass/base/base";
+@import "sass/base/typography";
+@import "sass/base/forms";
+@import "sass/base/slider";
+@import "sass/base/wpcore";
+
+// layout
+@import "sass/layout/header";
+@import "sass/layout/footer";
+@import "sass/layout/tabs";
+@import "sass/layout/pages";
+
+// plugins
+@import "sass/plugins";
+
+// navigation
+@import "sass/navigation/navigation";
+
+// modules
+@import "sass/modules/preloader";
+@import "sass/modules/buttons";
+@import "sass/modules/hero";
+@import "sass/modules/about";
+@import "sass/modules/contact";
+@import "sass/modules/social";
+@import "sass/modules/image-banner";
+@import "sass/modules/menu";
+@import "sass/modules/opening-times";

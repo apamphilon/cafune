@@ -1,0 +1,38 @@
+.contact {
+  background-color: $blue;
+  padding-bottom: 0;
+  .wrapper {
+    max-width: 500px;
+    text-align: center;
+  }
+  h2,
+  p {
+    color: $white;
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+//map starts here
+.google-map {
+  height: 500px;
+	margin: 0 auto;
+}
+
+.marker {
+	display: none;
+}
+
+span {
+	line-height: 1.5;
+}
+
+.marker-title {
+  @include font-size(20);
+  color: $brown;
+	display: block;
+	font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-bottom: 2px;
+}

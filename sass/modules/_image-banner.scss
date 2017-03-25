@@ -1,0 +1,17 @@
+[class*="image-banner"] {
+  display: block;
+  position: relative;
+  width: 100%;
+  min-height: 600px;
+  height: calc(100vh - 97px);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  .overlay-black {
+    background-color: rgba(0,0,0,.2);
+  }
+}
+
+.image-banner-1 {
+  background-image: url('images/banner.jpg');
+}

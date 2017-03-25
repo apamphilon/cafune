@@ -1,0 +1,76 @@
+//tabs
+.tabs {
+  width: percentage(500/$main_width);
+  margin-right: percentage(40/$main_width);
+  float: left;
+  p {
+    font-size: 11px;
+    line-height: 1.5em;
+  }
+}
+
+.tab-control h4 {
+  font-size: 12px;
+  padding: 11px 26px 8px 15px;
+}
+
+.tab-list{
+  margin: 0px;
+  padding: 0px;
+}
+
+.tab-list li {
+  transition: all 0.3s linear;
+  display: inline-block;
+  margin-left: -5px; // remove inline-block margin
+  list-style-type: none;
+  background-color: #c8c8c8;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.tab-list li:first-child {
+  margin-left: 0; // remove inline-block margin
+}
+
+.tab-list li a {
+  width: 100%;
+  display: block;
+  transition: all 0.3s linear;
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+/********** HOVER STATES **********/
+.tab-list li.active, .tab-list li.hover {
+  background-color: red;
+}
+
+.tab-list li.active a, .tab-list li a:hover {
+  color: red;
+}
+.tab-list li.active h4 {
+  color: red;
+}
+
+/********** PANELS **********/
+.tab-panel {
+  display: none;
+  background-color: red;
+  color: #666;
+  min-height: 300px;
+  overflow: auto;
+  padding: 20px;
+  clear: both;
+}
+
+.tab-panel.active {
+  display: block;
+}
+
+.panel {
+  display: none;
+  &:first-of-type {
+    display: block;
+  }
+}

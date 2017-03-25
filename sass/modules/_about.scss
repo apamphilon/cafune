@@ -1,0 +1,12 @@
+.about {
+  background-image: url('images/background.jpg');
+  background-size: 10%;
+  background-position: center center;
+  .wrapper {
+    max-width: 700px;
+    text-align: center;
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+}

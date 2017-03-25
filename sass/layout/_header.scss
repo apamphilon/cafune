@@ -1,0 +1,31 @@
+.site-header {
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: rgba(255,255,255,.98);
+  box-shadow: 15px 15px 30px rgba(0,0,0,.2);
+}
+
+.header-logo {
+  @include inline-block;
+  width: 150px;
+  height: 62px;
+  background-image: url('images/logo.svg');
+  background-size: 150px 62px;
+  background-position: center center;
+  @include transition(all ease-in-out 0.3s);
+  &:hover {
+    background-image: url('images/logo-hover.svg');
+  }
+}
+
+.js #js-header {
+  margin-top: -107px;
+  @include transition(all ease-in-out 1s);
+  &.slide-down {
+    margin-top: 0;
+  }
+}

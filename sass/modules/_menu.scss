@@ -1,0 +1,13 @@
+.menu {
+  background-image: url('images/banner2.jpg');
+  .wrapper {
+    z-index: 10;
+    position: relative;
+  }
+  &__title {
+    color: $white;
+  }
+  .overlay-black {
+    background-color: rgba(0,0,0,.6);
+  }
+}

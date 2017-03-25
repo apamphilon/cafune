@@ -1,0 +1,21 @@
+.btn {
+  border-radius: 5px;
+  background-color: $brown;
+  color: $white;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  @include transition(all ease-in-out 0.3s);
+  @include font-size(14);
+  &:hover {
+    background-color: darken($brown, 10%);
+  }
+  &--yellow {
+    background-color: $yellow;
+    color: #2d2d2d;
+    &:hover {
+      background-color: darken($yellow, 10%);
+    }
+  }
+}

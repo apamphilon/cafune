@@ -1,0 +1,56 @@
+.social {
+  @extend %clearfix;
+  overflow: hidden;
+  &__title {
+    color: $white;
+    margin: 0;
+    padding: 50px 20px;
+    text-align: center;
+    background-color: $blue;
+  }
+}
+
+#twitter,
+#instafeed {
+  float: left;
+  width: 52%;
+  padding: 80px 60px;
+  color: $white;
+  text-align: center;
+  .fa {
+    @include font-size(50);
+    display: block;
+    margin-bottom: 50px;
+  }
+}
+
+#twitter {
+  background-color: $green;
+}
+
+#instafeed {
+  background-color: $orange;
+  padding-bottom: 60px;
+  position: relative;
+  width: 48%;
+  a {
+    display: block;
+    width: 25%;
+    float: left;
+    padding: 0 10px 20px;
+  }
+  img {
+    border-radius: 10px;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 1000px 70px;
+    border-color: transparent transparent $orange transparent;
+  }
+}

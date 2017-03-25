@@ -1,0 +1,124 @@
+// default form styles
+form {
+  @extend %clearfix; // allows form to clear if submit button is floated.
+}
+
+input[type="text"],
+input[type="url"],
+input[type="tel"],
+input[type="number"],
+input[type="color"],
+input[type="email"],
+textarea {
+	border: none;
+	-webkit-appearance: none;
+	border-radius: 0;
+	width: 100%;
+	box-sizing: border-box;
+	background: #ebe6e4;
+	font-family: $main_font;
+	&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+		color: $black;
+	}
+	&::-moz-placeholder { /* Firefox 19+ */
+		color: $black;
+	}
+	&:-ms-input-placeholder { /* IE 10+ */
+		color: $black;
+	}
+	&:-moz-placeholder { /* Firefox 18- */
+		color: $black;
+	}
+}
+
+input {
+	height: 40px;
+	line-height: normal;
+	padding: 0 7px;
+}
+
+textarea {
+	padding: 7px;
+}
+
+input[type="submit"] {
+  border-radius: 0;
+  border: none;
+	-webkit-appearance: none;
+	background: red;
+	text-transform: uppercase;
+	color: $white;
+	@include font-size(16);
+	cursor: pointer;
+	margin-top: 10px;
+}
+
+label {
+	color: #808184;
+	@include font-size(13);
+	line-height: 20px;
+	display: none;
+	font-family: $main_font;
+}
+
+.gfield > label {
+	display: block;
+}
+
+// gforms
+// error
+.validation_error,
+.validation_message {
+	color: red;
+}
+
+.validation_error {
+	margin: 30px 0;
+	color: $white;
+	background: red;
+	padding: 20px;
+	border-radius: 10px;
+	text-align: center;
+  line-height: 24px;
+}
+
+.validation_message {
+	padding: 10px 0 0;
+	@include font-size(14);
+	box-sizing: border-box;
+}
+
+// anti spam honeypot
+.gform_validation_container {
+	display: none;
+}
+
+.gfield {
+	margin-bottom: 20px;
+	&.left,
+	&.right {
+		width: 49%;
+	}
+	&.left {
+		float: left;
+	}
+	&.right {
+		float: right;
+	}
+}
+
+.gform_title {
+	color: red;
+	@include font-size(26);
+	line-height: 33px;
+	margin-bottom: 5px;
+}
+
+.gform_description {
+	font-family: $main_font;
+	@include font-size(16);
+	line-height: 20px;
+	color: #808184;
+	margin-bottom: 20px;
+	display: block;
+}
