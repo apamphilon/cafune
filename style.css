@@ -3515,22 +3515,29 @@ span {
     text-align: center;
     background-color: #58bace; }
 
-#twitter,
+#twitter-feed,
 #instafeed {
   float: left;
   width: 52%;
   padding: 80px 60px;
   color: #fff;
   text-align: center; }
-  #twitter .fa,
+  #twitter-feed .fa,
   #instafeed .fa {
     font-size: 50px;
     font-size: 5rem;
     display: block;
     margin-bottom: 50px; }
 
-#twitter {
+#twitter-feed {
   background-color: #2ba15f; }
+
+#twitter {
+  max-width: 400px;
+  margin: 0 auto;
+  line-height: 2; }
+  #twitter a {
+    color: #fff; }
 
 #instafeed {
   background-color: #e88512;

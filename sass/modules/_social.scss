@@ -10,7 +10,7 @@
   }
 }
 
-#twitter,
+#twitter-feed,
 #instafeed {
   float: left;
   width: 52%;
@@ -24,8 +24,18 @@
   }
 }
 
-#twitter {
+#twitter-feed {
   background-color: $green;
+}
+
+// tweet list
+#twitter {
+  max-width: 400px;
+  margin: 0 auto;
+  line-height: 2;
+  a {
+    color: $white;
+  }
 }
 
 #instafeed {
