@@ -57,12 +57,22 @@ $('document').ready(function() {
 			mapTypeId	: google.maps.MapTypeId.ROADMAP,
 			//optional styles
 			styles: [
-				{
-			        featureType: 'all',
-			        stylers: [
-			            { saturation: -100 }
-			        ]
-			    }
+			  {
+			    featureType: 'all',
+			    stylers: [
+			      {
+              saturation: -100
+            }
+			    ]
+			  }
+        // {
+        //   "elementType": "labels.text.fill",
+        //   "stylers": [
+        //     {
+        //       "color": "#906728"
+        //     }
+        //   ]
+        // },
 			]
 		};
 
