@@ -146,8 +146,10 @@
 
               <?php
               // twitter feed
-              // $cache = dirname(__FILE__) . '/plugins/tweet-php-master/cache/';
+              $cache = dirname(__FILE__) . '/plugins/tweet-php-master/cache/';
               $path = dirname(__FILE__) . '/plugins/tweet-php-master/TweetPHP.php';
+
+              print_r($path);
 
               // requires TweetPHP
               require_once($path);
@@ -159,8 +161,8 @@
                 'access_token'              => '102715779-T9JyiIOA3nrQ2AiU29ZM4jT50Arxsbzi0aK3SOAe',
                 'access_token_secret'       => 'IwWKeEHQeMhVHQpGzYZtbJu2bRZH5BnuziMfZvavhAk6u',
                 'twitter_screen_name'       => 'apamphilon',
-                'enable_cache'          => false,
-                // 'cache_dir'             => $cache, // Where on the server to save cached tweets
+                'enable_cache'          => true,
+                'cache_dir'             => $cache, // Where on the server to save cached tweets
                 'cachetime'             => 1 * 1, // Seconds to cache feed (1 hour).
                 'tweets_to_retrieve'    => 10, // Specifies the number of tweets to try and fetch, up to a maximum of 200
                 'tweets_to_display'     => 1, // Number of tweets to display
@@ -175,9 +177,11 @@
                 'error_template'        => '<span class="status">Our twitter feed is unavailable right now.</span> <span class="meta"><a href="{link}">Follow us on Twitter</a></span>',
                 'debug'                 => true
               ));
+
+              echo $TweetPHP->get_tweet_list();
+
               ?>
 
-              <p>Latest tweet will go here</p>
             </div>
 
             <script type="text/javascript">
