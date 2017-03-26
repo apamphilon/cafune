@@ -95,7 +95,7 @@ $('document').ready(function() {
 		var latlng = new google.maps.LatLng( $marker.attr('data-lat'), $marker.attr('data-lng') );
 
 		//custom img
-		var image = '/cafune/images/map-marker.png'
+		var image = window.location.pathname + 'images/map-marker.png';
 
 		// create marker
 		var marker = new google.maps.Marker({
