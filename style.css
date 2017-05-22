@@ -695,20 +695,6 @@ body {
   right: 0;
   bottom: 0; }
 
-@font-face {
-  font-family: 'Enriqueta';
-  src: url("fonts/Enriqueta-Bold.eot");
-  src: url("fonts/Enriqueta-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/Enriqueta-Bold.woff") format("woff"), url("fonts/Enriqueta-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Enriqueta';
-  src: url("fonts/Enriqueta-Regular.eot");
-  src: url("fonts/Enriqueta-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/Enriqueta-Regular.woff") format("woff"), url("fonts/Enriqueta-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
 html {
   font-size: 62.5%; }
 
@@ -731,10 +717,16 @@ p {
   font-size: 16px;
   font-size: 1.6rem; }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: bold;
   color: #906728;
-  font-family: 'Enriqueta', sans-serif; }
+  font-family: "Kameron", serif;
+  letter-spacing: -1.5px; }
 
 h1 {
   font-size: 2em; }
@@ -749,10 +741,10 @@ h4 {
   font-size: 1em; }
 
 h5 {
-  font-size: 0.83em; }
+  font-size: .83em; }
 
 h6 {
-  font-size: 0.67em; }
+  font-size: .67em; }
 
 .section-title {
   font-size: 34px;

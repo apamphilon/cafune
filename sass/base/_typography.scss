@@ -1,25 +1,5 @@
-@font-face {
-	font-family: 'Enriqueta';
-	src: url('fonts/Enriqueta-Bold.eot');
-	src: url('fonts/Enriqueta-Bold.eot?#iefix') format('embedded-opentype'),
-		   url('fonts/Enriqueta-Bold.woff') format('woff'),
-		   url('fonts/Enriqueta-Bold.ttf') format('truetype');
-	font-weight: bold;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Enriqueta';
-	src: url('fonts/Enriqueta-Regular.eot');
-	src: url('fonts/Enriqueta-Regular.eot?#iefix') format('embedded-opentype'),
-		   url('fonts/Enriqueta-Regular.woff') format('woff'),
-		   url('fonts/Enriqueta-Regular.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
-
 //fonts
-$main_font: 'Open Sans', sans-serif;
+$main_font: "Open Sans", sans-serif;
 
 //weights
 $bold: 700;
@@ -29,30 +9,36 @@ html {
 }
 
 body {
-	color: #444444;
-	font-family: $main_font;
+  color: #444444;
+  font-family: $main_font;
   -webkit-font-smoothing: antialiased;
   @include font-size(16); // declares a default font-size
 }
 
 em,
 i {
-	font-style: italic;
+  font-style: italic;
 }
 
 a {
-	@include transition(all ease-in-out 0.3s);
+  @include transition(all ease-in-out .3s);
 }
 
 p {
-	margin-bottom: 30px;
-	@include font-size(16);
+  margin-bottom: 30px;
+  @include font-size(16);
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: bold;
   color: $brown;
-  font-family: 'Enriqueta', sans-serif;
+  font-family: "Kameron", serif;
+  letter-spacing: -1.5px;
 }
 
 h1 {
@@ -72,11 +58,11 @@ h4 {
 }
 
 h5 {
-  font-size: 0.83em; // 13.28px
+  font-size: .83em; // 13.28px
 }
 
 h6 {
-  font-size: 0.67em; // 10.72px
+  font-size: .67em; // 10.72px
 }
 
 .section-title {
