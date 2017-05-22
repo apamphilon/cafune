@@ -92,13 +92,13 @@
                   <div class="wrapper">
                     <h2 class="section-title opening-times__title">Opening Times</h2>
                     <ul>
-                      <li>Monday: 9am - 5pm</li>
-                      <li>Tuesday: 9am - 5pm</li>
-                      <li>Wednesday: 9am - 5pm</li>
-                      <li>Thursday: 9am - 5pm</li>
-                      <li>Friday: 9am - 5pm</li>
-                      <li>Sat: 9am - 5pm</li>
-                      <li>Sunday: 10am - 4pm</li>
+                      <li><?php if (date('D') == 'Mon') echo '<strong>Today</strong> '; ?>Mon 7:30 - 17:30</li>
+                      <li><?php if (date('D') == 'Tue') echo '<strong>Today</strong> '; ?>Tue 7:30 - 17:30</li>
+                      <li><?php if (date('D') == 'Wed') echo '<strong>Today</strong> '; ?>Wed 7:30 - 17:30</li>
+                      <li><?php if (date('D') == 'Thu') echo '<strong>Today</strong> '; ?>Thu 7:30 - 17:30</li>
+                      <li><?php if (date('D') == 'Fri') echo '<strong>Today</strong> '; ?>Fri 7:30 - 17:30</li>
+                      <li><?php if (date('D') == 'Sat') echo '<strong>Today</strong> '; ?>Sat: 8:30 - 17:30</li>
+                      <li><?php if (date('D') == 'Sun') echo '<strong>Today</strong> '; ?>Sun: 10:30 - 15:00</li>
                     </ul>
                   </div>
               </div>
@@ -108,7 +108,9 @@
           <div class="contact" id="contact">
             <div class="wrapper section-pad">
               <h2 class="section-title">Find Cafuné</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quod accusantium laborum eveniet aliquid ipsum nisi, possimus quisquam eaque at saepe doloribus optio asperiores provident, minima delectus aperiam voluptate consequatur.</p>
+              <p>We are located in the heart of Preston. You’ll find us on market place, opposite the historic Harris museum.</p>
+              <p>Sunny? Make the most of it and order some of our delicious food and drink to take out.
+              <p>Or more likely - take shelter from the rain! Choose somewhere to relax and listen to some South American music whilst you enjoy what we have to offer.</p>
             </div><!-- .wrapper -->
 
               <!-- google map api -->
@@ -116,11 +118,11 @@
 
               <!-- START MAP -->
               <div class="google-map">
-              	<div class="marker" data-lat="53.7587178" data-lng="-2.7017797">
+              	<div class="marker" data-lat="53.760222" data-lng="-2.7024913">
               		<span class="marker-title">
               			<strong>Cafuné Preston</strong>
               		</span>
-              		<span>30-31 Cheapside,<br> Preston<br> PR1 2AP</span>
+              		<span>35 Market place,<br> Preston<br> PR1 2AR</span>
               	</div>
               </div>
               <!-- END MAP -->
